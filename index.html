@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gully studios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1><a href="#" id="home-link">gully studios*</a></h1>
+    <p class="sub" id="right-pane">*is <u>not</u> a registered trademark, please do not steal it. :)</p>
+  </header>
+
+  <a href="mailto:albab.rahman98@gmail.com" class="contact">contact</a>
+
+  <div class="hover-title" id="hover-title"></div>
+
+  <main id="main"></main>
+
+  <!-- Gallery View (same central column, replaces main content) -->
+  <div class="gallery" id="gallery"></div>
+
+  <script src="projects.js"></script>
+  <script>
+    const main = document.getElementById('main');
+    const hoverTitle = document.getElementById('hover-title');
+    const gallery = document.getElementById('gallery');
+    const rightPane = document.getElementById('right-pane');
+    const homeLink = document.getElementById('home-link');
+
+    const subtitleHTML = '*is <u>not</u> a registered trademark, please do not steal it. :)';
+
+    // Helper: render a media item (image or video)
+    function renderMedia(src, alt, lazy) {
+      const ext = src.split('.').pop().toLowerCase();
+      const isVideo = ['mp4', 'webm', 'mov'].includes(ext);
+
+      if (isVideo) {
+        return `<video src="${src}" autoplay loop muted playsinline preload="metadata"></video>`;
+      }
+      return `<img src="${src}" alt="${alt}" ${lazy ? 'loading="lazy"' : ''}>`;
+    }
+
+    // Build thumbnails from projects.js
+    projects.forEach((project, index) => {
+      const item = document.createElement('div');
+      item.className = 'image-item';
+
+      // Use thumbnailSmall if available, otherwise fall back to thumbnail
+      const thumbSrc = project.thumbnailSmall || project.thumbnail;
+      item.innerHTML = renderMedia(thumbSrc, project.title, true);
+
+      item.addEventListener('mouseenter', () => {
+        hoverTitle.textContent = project.title;
+        hoverTitle.classList.add('visible');
+      });
+
+      item.addEventListener('mouseleave', () => {
+        hoverTitle.classList.remove('visible');
+      });
+
+      item.addEventListener('click', () => openGallery(index));
+
+      main.appendChild(item);
+    });
+
+    // Gallery
+    function openGallery(index) {
+      const project = projects[index];
+
+      gallery.innerHTML = project.images
+        .map(src => renderMedia(src, project.title, true))
+        .join('')
+        + `<div class="gallery-text-mobile">${project.text}</div>`;
+
+      // Swap right pane to project info
+      rightPane.innerHTML = project.text;
+      rightPane.classList.add('project-info');
+
+      main.style.display = 'none';
+      gallery.classList.add('active');
+      hoverTitle.classList.remove('visible');
+      window.scrollTo(0, 0);
+    }
+
+    function closeGallery() {
+      // Pause any playing videos in gallery
+      gallery.querySelectorAll('video').forEach(v => v.pause());
+
+      main.style.display = '';
+      gallery.classList.remove('active');
+      rightPane.innerHTML = subtitleHTML;
+      rightPane.classList.remove('project-info');
+    }
+
+    homeLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (gallery.classList.contains('active')) {
+        closeGallery();
+      }
+    });
+
+    rightPane.addEventListener('click', () => {
+      if (rightPane.classList.contains('project-info')) {
+        closeGallery();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeGallery();
+    });
+  </script>
+
+</body>
+</html>
