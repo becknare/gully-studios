@@ -21,6 +21,8 @@ const projects = [
   {
     title: 'Beckmans Fashion Collaboration 2026',
     thumbnail: 'images/50fifty/fifty00009.webp',
+    thumbnailWidth: 4500,
+    thumbnailHeight: 4500,
     images: [
       'images/50fifty/fifty00001.webp',
       'images/50fifty/fifty00002.webp',
@@ -46,6 +48,8 @@ const projects = [
     {
     title: 'Beckmans Graduation Project – Se men inte höra',
     thumbnail: 'images/examen/examen01.webp',
+    thumbnailWidth: 1080,
+    thumbnailHeight: 1350,
     images: [
       'images/examen/examen01.webp',
       'images/examen/examen02.webp',
@@ -66,6 +70,8 @@ const projects = [
   {
     title: 'Sellofán',
     thumbnail: 'images/sellofan/Sellofan01.mp4',
+    thumbnailWidth: 1280,
+    thumbnailHeight: 720,
     images: [
       'images/sellofan/Sellofan01.mp4',
       'images/sellofan/Sellofan02.png',
@@ -84,6 +90,8 @@ animation, motion design, 3D design
   {
     title: 'Från 165 med kärlek / From 165 With Love',
     thumbnail: 'images/165/165_01.mp4',
+    thumbnailWidth: 1080,
+    thumbnailHeight: 1080,
     images: [
       'images/165/165_02.mp4',
       'images/165/165_03.png',
@@ -104,6 +112,8 @@ animation, motion design, 3D design
   {
     title: "Heaven's Gate",
     thumbnail: 'images/heavensgate/hg06.webp',
+    thumbnailWidth: 2984,
+    thumbnailHeight: 1678,
     images: [
       'images/heavensgate/hg01.webp',
       'images/heavensgate/hg02.webp',
@@ -121,6 +131,8 @@ animation, motion design, 3D design
   {
     title: 'A magazine about Amelis',
     thumbnail: 'images/amelis/amelis01.webp',
+    thumbnailWidth: 6240,
+    thumbnailHeight: 4160,
     images: [
       'images/amelis/amelis02.webp',
       'images/amelis/amelis03.webp',
@@ -137,6 +149,8 @@ Art direction & graphic design: Bobby Rahman, Hanna Hedberg, Mika Hyvönen, Tyra
   {
     title: 'Baubari Studios',
     thumbnail: 'images/backstage-look-1/baubari01.jpg',
+    thumbnailWidth: 1741,
+    thumbnailHeight: 2176,
     images: [
       'images/backstage-look-1/baubari01.jpg',
       'images/backstage-look-1/baubari02.jpg',
@@ -153,6 +167,8 @@ Art direction & graphic design: Bobby Rahman, Hanna Hedberg, Mika Hyvönen, Tyra
   {
     title: 'Supper',
     thumbnail: 'images/supper/supper01.jpg',
+    thumbnailWidth: 1638,
+    thumbnailHeight: 2048,
     images: [
       'images/supper/supper01.jpg',
       'images/supper/supper02.jpg',

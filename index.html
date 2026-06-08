@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gully Studios — art direction, graphic & motion design by Bobby Rahman, Stockholm.">
   <title>gully studios</title>
+  <link rel="preload" as="image" href="images/50fifty/fifty00009.webp" type="image/webp">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,15 +35,15 @@
 
     const subtitleHTML = '*is <u>not</u> a registered trademark, please do not steal it. :)';
 
-    // Helper: render a media item (image or video)
-    function renderMedia(src, alt, lazy) {
+    function renderMedia(src, alt, lazy, w, h) {
       const ext = src.split('.').pop().toLowerCase();
       const isVideo = ['mp4', 'webm', 'mov'].includes(ext);
+      const dims = w ? `width="${w}" height="${h}"` : '';
 
       if (isVideo) {
-        return `<video src="${src}" autoplay loop muted playsinline preload="metadata"></video>`;
+        return `<video src="${src}" ${dims} autoplay loop muted playsinline preload="metadata"></video>`;
       }
-      return `<img src="${src}" alt="${alt}" ${lazy ? 'loading="lazy"' : ''}>`;
+      return `<img src="${src}" alt="${alt}" ${dims} ${lazy ? 'loading="lazy"' : ''}>`;
     }
 
     // Build thumbnails from projects.js
@@ -49,9 +51,8 @@
       const item = document.createElement('div');
       item.className = 'image-item';
 
-      // Use thumbnailSmall if available, otherwise fall back to thumbnail
       const thumbSrc = project.thumbnailSmall || project.thumbnail;
-      item.innerHTML = renderMedia(thumbSrc, project.title, true);
+      item.innerHTML = renderMedia(thumbSrc, project.title, index > 0, project.thumbnailWidth, project.thumbnailHeight);
 
       item.addEventListener('mouseenter', () => {
         hoverTitle.textContent = project.title;
