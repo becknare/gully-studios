@@ -20,18 +20,18 @@ const projects = [
 
   {
     title: 'Beckmans Fashion Collaboration 2026',
-    thumbnail: 'images/50fifty/fifty00009.png',
+    thumbnail: 'images/50fifty/fifty00009.webp',
     images: [
-      'images/50fifty/fifty00001.png',
-      'images/50fifty/fifty00002.png',
-      'images/50fifty/fifty00003.png',
-      'images/50fifty/fifty00004.png',
-      'images/50fifty/fifty00005.png',
-      'images/50fifty/fifty00006.png',
-      'images/50fifty/fifty00007.png',
-      'images/50fifty/fifty00008.png',
-      'images/50fifty/fifty00009.png',
-      'images/50fifty/fifty00010.png',
+      'images/50fifty/fifty00001.webp',
+      'images/50fifty/fifty00002.webp',
+      'images/50fifty/fifty00003.webp',
+      'images/50fifty/fifty00004.webp',
+      'images/50fifty/fifty00005.webp',
+      'images/50fifty/fifty00006.webp',
+      'images/50fifty/fifty00007.webp',
+      'images/50fifty/fifty00008.webp',
+      'images/50fifty/fifty00009.webp',
+      'images/50fifty/fifty00010.webp',
     ],
     text: `
       <h2>Beckmans Fashion Collaboration 2026</h2>
@@ -39,6 +39,26 @@ const projects = [
       Lookbook, visual identity, branding, invitations, merch, runway backdrop and social media campaign in collaboration with the best team possible.</p>
       <p class="meta">
       Art direction & graphic design: Bobby Rahman, Ella Farestam, Stephanie Holmén, Tyra Östlund, Wilma Reichardt
+      </p>
+    `,
+  },
+
+    {
+    title: 'Beckmans Graduation Project – Se men inte höra',
+    thumbnail: 'images/examen/examen01.webp',
+    images: [
+      'images/examen/examen01.webp',
+      'images/examen/examen02.webp',
+      'images/examen/examen03.webp',
+    ],
+    text: `
+      <h2>Se men inte höra</h2>
+      <p>A series of album covers without music, designed using a modular system that mirrors the structure of music production. A space reserved for songs that do not yet exist.
+      “Se men inte höra” explores what happens when graphic design becomes the starting point for music, expressed through CD covers without accompanying songs. The covers are constructed using a modular system of layers that mirrors the structure of music production, using graphic elements sampled from found material, in the same way that music is sampled from existing sound. 
+      The project began with a longing to return to making music and to portray it visually. Throughout the process it became a reserved space for the music to return to, when ready.
+      </p>
+      <p class="meta">
+      Graphic design
       </p>
     `,
   },
@@ -83,13 +103,13 @@ animation, motion design, 3D design
 
   {
     title: "Heaven's Gate",
-    thumbnail: 'images/heavensgate/hg06.png',
+    thumbnail: 'images/heavensgate/hg06.webp',
     images: [
-      'images/heavensgate/hg01.png',
-      'images/heavensgate/hg02.png',
-      'images/heavensgate/hg03.png',
-      'images/heavensgate/hg04.png',
-      'images/heavensgate/hg05.png',
+      'images/heavensgate/hg01.webp',
+      'images/heavensgate/hg02.webp',
+      'images/heavensgate/hg03.webp',
+      'images/heavensgate/hg04.webp',
+      'images/heavensgate/hg05.webp',
     ],
     text: `
       <h2>Heaven's Gate</h2>
@@ -100,11 +120,11 @@ animation, motion design, 3D design
 
   {
     title: 'A magazine about Amelis',
-    thumbnail: 'images/amelis/amelis01 .jpg',
+    thumbnail: 'images/amelis/amelis01.webp',
     images: [
-      'images/amelis/amelis02.jpg',
-      'images/amelis/amelis03.jpg',
-      'images/amelis/amelis04.jpg',
+      'images/amelis/amelis02.webp',
+      'images/amelis/amelis03.webp',
+      'images/amelis/amelis04.webp',
     ],
     text: `
       <h2>A magazine about Amelis</h2>

@@ -29,6 +29,7 @@
     const gallery = document.getElementById('gallery');
     const rightPane = document.getElementById('right-pane');
     const homeLink = document.getElementById('home-link');
+    const contactLink = document.querySelector('.contact');
 
     const subtitleHTML = '*is <u>not</u> a registered trademark, please do not steal it. :)';
 
@@ -83,6 +84,11 @@
       gallery.classList.add('active');
       hoverTitle.classList.remove('visible');
       window.scrollTo(0, 0);
+
+      if (window.innerWidth > 768) {
+        contactLink.textContent = 'back';
+        contactLink.href = '#';
+      }
     }
 
     function closeGallery() {
@@ -93,7 +99,17 @@
       gallery.classList.remove('active');
       rightPane.innerHTML = subtitleHTML;
       rightPane.classList.remove('project-info');
+
+      contactLink.textContent = 'contact';
+      contactLink.href = 'mailto:albab.rahman98@gmail.com';
     }
+
+    contactLink.addEventListener('click', (e) => {
+      if (gallery.classList.contains('active')) {
+        e.preventDefault();
+        closeGallery();
+      }
+    });
 
     homeLink.addEventListener('click', (e) => {
       e.preventDefault();
