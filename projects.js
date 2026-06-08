@@ -21,8 +21,8 @@ const projects = [
   {
     title: 'Beckmans Fashion Collaboration 2026',
     thumbnail: 'images/50fifty/fifty00009.webp',
-    thumbnailWidth: 4500,
-    thumbnailHeight: 4500,
+    thumbnailWidth: 1500,
+    thumbnailHeight: 1500,
     images: [
       'images/50fifty/fifty00001.webp',
       'images/50fifty/fifty00002.webp',
@@ -48,8 +48,8 @@ const projects = [
     {
     title: 'Beckmans Graduation Project – Se men inte höra',
     thumbnail: 'images/examen/examen01.webp',
-    thumbnailWidth: 1080,
-    thumbnailHeight: 1350,
+    thumbnailWidth: 1200,
+    thumbnailHeight: 1500,
     images: [
       'images/examen/examen01.webp',
       'images/examen/examen02.webp',
@@ -74,9 +74,9 @@ const projects = [
     thumbnailHeight: 720,
     images: [
       'images/sellofan/Sellofan01.mp4',
-      'images/sellofan/Sellofan02.png',
-      'images/sellofan/Sellofan03.png',
-      'images/sellofan/Sellofan04.png',
+      'images/sellofan/Sellofan02.webp',
+      'images/sellofan/Sellofan03.webp',
+      'images/sellofan/Sellofan04.webp',
     ],
     text: `
       <h2>Sellofán</h2>
@@ -94,9 +94,9 @@ animation, motion design, 3D design
     thumbnailHeight: 1080,
     images: [
       'images/165/165_02.mp4',
-      'images/165/165_03.png',
-      'images/165/165_04.png',
-      'images/165/165_05.png',
+      'images/165/165_03.webp',
+      'images/165/165_04.webp',
+      'images/165/165_05.webp',
     ],
     text: `
       <h2>Från 165 med kärlek / From 165 With Love</h2>
@@ -112,8 +112,8 @@ animation, motion design, 3D design
   {
     title: "Heaven's Gate",
     thumbnail: 'images/heavensgate/hg06.webp',
-    thumbnailWidth: 2984,
-    thumbnailHeight: 1678,
+    thumbnailWidth: 1500,
+    thumbnailHeight: 844,
     images: [
       'images/heavensgate/hg01.webp',
       'images/heavensgate/hg02.webp',
@@ -131,8 +131,8 @@ animation, motion design, 3D design
   {
     title: 'A magazine about Amelis',
     thumbnail: 'images/amelis/amelis01.webp',
-    thumbnailWidth: 6240,
-    thumbnailHeight: 4160,
+    thumbnailWidth: 1500,
+    thumbnailHeight: 1000,
     images: [
       'images/amelis/amelis02.webp',
       'images/amelis/amelis03.webp',
@@ -148,14 +148,14 @@ Art direction & graphic design: Bobby Rahman, Hanna Hedberg, Mika Hyvönen, Tyra
 
   {
     title: 'Baubari Studios',
-    thumbnail: 'images/backstage-look-1/baubari01.jpg',
-    thumbnailWidth: 1741,
-    thumbnailHeight: 2176,
+    thumbnail: 'images/backstage-look-1/baubari01.webp',
+    thumbnailWidth: 1200,
+    thumbnailHeight: 1500,
     images: [
-      'images/backstage-look-1/baubari01.jpg',
-      'images/backstage-look-1/baubari02.jpg',
-      'images/backstage-look-1/baubari03.jpg',
-      'images/backstage-look-1/baubari04.jpg',
+      'images/backstage-look-1/baubari01.webp',
+      'images/backstage-look-1/baubari02.webp',
+      'images/backstage-look-1/baubari03.webp',
+      'images/backstage-look-1/baubari04.webp',
     ],
     text: `
       <h2>Backstage, Look 4</h2>
@@ -166,13 +166,13 @@ Art direction & graphic design: Bobby Rahman, Hanna Hedberg, Mika Hyvönen, Tyra
 
   {
     title: 'Supper',
-    thumbnail: 'images/supper/supper01.jpg',
-    thumbnailWidth: 1638,
-    thumbnailHeight: 2048,
+    thumbnail: 'images/supper/supper01.webp',
+    thumbnailWidth: 1199,
+    thumbnailHeight: 1500,
     images: [
-      'images/supper/supper01.jpg',
-      'images/supper/supper02.jpg',
-      'images/supper/supper03.jpg',
+      'images/supper/supper01.webp',
+      'images/supper/supper02.webp',
+      'images/supper/supper03.webp',
     ],
     text: `
       <h2>Supper</h2>
